@@ -1,6 +1,10 @@
 /** Settings */
 @import './blocks/config/_colors';
 @import './blocks/config/_fonts';
+@import './blocks/config/_base';
+@import './blocks/config/_menu.animation';
 
 /** Blocks */
 @import './blocks/_header';
+@import './blocks/_bookmark';
+@import './blocks/_features';
