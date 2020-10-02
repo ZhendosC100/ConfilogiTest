@@ -1,5 +1,5 @@
 const tabs = () => {
-  const features= document.querySelector('.features');
+  const features = document.querySelector('.features');
   const tab = document.querySelectorAll('.tab');
   const tabContent = features.querySelectorAll('.tab_content');
 
