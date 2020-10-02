@@ -957,9 +957,10 @@ button {
 
 .contact_form__email {
   margin-bottom: 30px;
-  height: 42px;
-  border: none;
-  width: 100%;
+  padding: 0 10px;
+  height: 38px;
+  border: 2px solid #f4f4f5;
+  width: 91%;
   max-width: 296px;
   border-radius: 7px;
   font-family: 'Rubik-regular';
@@ -969,8 +970,8 @@ button {
 @media only screen and (min-width: 768px) {
   .contact_form__email {
     margin-bottom: 0;
-    width: 63%;
-    max-width: 63%;
+    width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -992,5 +993,186 @@ button {
     background-color: #f4f4f5;
     color: #fa5757;
   }
+}
+
+.input_wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 296px;
+}
+
+.input_img {
+  display: none;
+  position: absolute;
+  top: 11px;
+  right: 9px;
+}
+
+.input_error {
+  display: none;
+  position: absolute;
+  margin: 0;
+  width: 100%;
+  bottom: 15px;
+  left: 50%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #fa5757;
+  font-size: 13px;
+  font-style: italic;
+  color: #f4f4f5;
+  font-weight: 300;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+@media only screen and (min-width: 768px) {
+  .input_error {
+    bottom: -8px;
+  }
+}
+
+.input_wrapper-active {
+  border-radius: 10px;
+  background-color: #fa5757;
+  margin-bottom: 10px;
+}
+
+.input_wrapper-active .input_img {
+  display: inline-block;
+}
+
+.input_wrapper-active .input_error {
+  display: block;
+}
+
+.input_wrapper-active .contact_form__email {
+  margin-top: 2px;
+  width: 90%;
+}
+
+.footer {
+  background-color: #252b46;
+  padding: 50px 0;
+}
+
+.footer_container {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer_container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.footer_logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer_logo {
+    margin-bottom: 0;
+    margin-right: 45px;
+  }
+}
+
+.footer_nav-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer_nav-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.footer_nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer_nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.footer_nav-link {
+  margin-bottom: 30px;
+  color: #f4f4f5;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer_nav-link {
+    margin-bottom: 0;
+    margin: 0 15px;
+  }
+}
+
+.footer_socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100px;
+}
+
+.footer_social {
+  color: #f4f4f5;
+}
+
+.footer_social:hover {
+  cursor: pointer;
+  color: #fa5757;
 }
 /*# sourceMappingURL=style.css.map */
