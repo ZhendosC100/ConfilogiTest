@@ -61,16 +61,6 @@
   }
 }
 
-.tab_active {
-  .tab_border{
-    background-color: $color_red-light;
-  }
-
-  .tab_header {
-    color: $color_black;
-  }
-}
-
 .tab_content {
   display: none;
   flex-direction: column;
@@ -209,5 +199,17 @@
       }
     }
 
+  }
+}
+
+// active classes
+
+.tab_active {
+  .tab_border{
+    background-color: $color_red-light;
+  }
+
+  .tab_header {
+    color: $color_black;
   }
 }

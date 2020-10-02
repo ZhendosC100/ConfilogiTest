@@ -9,6 +9,7 @@ body {
   font-family: 'Rubik-regular';
   font-size: 18px;
   color: $color_black;
+  overflow-x: hidden;
 }
 
 ul {
@@ -52,4 +53,5 @@ button {
   border-radius: 7px;
   font-family: 'Rubik-regular';
   font-size: 18px;
+  outline: none;
 }

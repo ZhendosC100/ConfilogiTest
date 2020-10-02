@@ -1,0 +1,75 @@
+.contact {
+  padding: 60px 0;
+  background-color: $color_blue-light;
+
+  &_description {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 556px;
+    color: $color_white-1;
+    font-size: 14px;
+    line-height: 1.4;
+
+    &-wrapper {
+      text-align: center;
+    }
+  }
+
+  &_header {
+    width: 100%;
+    max-width: 270px;
+    margin: 27px auto;
+    color: $color_white-1;
+    font-size: 27px;
+  }
+
+  &_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px auto;
+    width: 100%;
+    max-width: 500px;
+
+    @media only screen and (min-width: 768px){
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+    }
+  }
+
+  &_form__email {
+    margin-bottom: 30px;
+    height: 42px;
+    border: none;
+    width: 100%;
+    max-width: 296px;
+    border-radius: 7px;
+    font-family: 'Rubik-regular';
+    outline: none;
+
+    @media only screen and (min-width: 768px){
+      margin-bottom: 0;
+      width: 63%;
+      max-width: 63%;
+    }
+  }
+
+  &_btn {
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid $color_red-light;
+    background-color: $color_red-light;
+    color: $color_white-1;
+
+    @media only screen and (min-width: 768px){
+      max-width: 150px;
+      &:hover {
+        cursor: pointer;
+        background-color: $color_white-1;
+        color: $color_red-light;
+      }
+    }
+  }
+}
