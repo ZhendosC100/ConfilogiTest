@@ -146,10 +146,6 @@
   }
 }
 
-.tab_content-active {
-  display: flex;
-}
-
 .btn {
   &_wrapper {
     display: flex;
@@ -212,4 +208,8 @@
   .tab_header {
     color: $color_black;
   }
+}
+
+.tab_content-active {
+  display: flex;
 }

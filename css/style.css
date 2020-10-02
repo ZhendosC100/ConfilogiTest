@@ -610,12 +610,6 @@ button {
   }
 }
 
-.tab_content-active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .btn_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -681,6 +675,12 @@ button {
 
 .tab_active .tab_header {
   color: #1a1c23;
+}
+
+.tab_content-active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .extention_description {
@@ -997,8 +997,15 @@ button {
 
 .input_wrapper {
   position: relative;
+  margin-bottom: 10px;
   width: 100%;
   max-width: 296px;
+}
+
+@media only screen and (min-width: 768px) {
+  .input_wrapper {
+    margin-bottom: 0;
+  }
 }
 
 .input_img {
@@ -1035,7 +1042,6 @@ button {
 .input_wrapper-active {
   border-radius: 10px;
   background-color: #fa5757;
-  margin-bottom: 10px;
 }
 
 .input_wrapper-active .input_img {
@@ -1049,6 +1055,12 @@ button {
 .input_wrapper-active .contact_form__email {
   margin-top: 2px;
   width: 90%;
+}
+
+@media only screen and (min-width: 768px) {
+  .input_wrapper-active .contact_form__email {
+    width: 91%;
+  }
 }
 
 .footer {
@@ -1172,6 +1184,59 @@ button {
 }
 
 .footer_social:hover {
+  cursor: pointer;
+  color: #fa5757;
+}
+
+.modal_tab {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  max-width: 296px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  overflow: hidden;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 4px 5px 2px #c5cae8;
+          box-shadow: 0px 4px 5px 2px #c5cae8;
+  background-color: #f4f4f5;
+}
+
+@media only screen and (min-width: 768px) {
+  .modal_tab {
+    max-width: 600px;
+  }
+}
+
+.modal_tab_content__img-wrapper {
+  height: 194px;
+  width: 262px;
+}
+
+.modal_tab_content__img-wrapper::before {
+  bottom: -62px;
+  left: -489px;
+  height: 173px;
+  width: 684px;
+}
+
+.modal_tab-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: #5368df;
+  font-weight: 800;
+}
+
+.close:hover {
   cursor: pointer;
   color: #fa5757;
 }

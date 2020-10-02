@@ -1,0 +1,47 @@
+.modal {
+  &_tab {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    max-width: 296px;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: 0px 4px 5px 2px lighten(desaturate($color_blue-light, 25.42), 24.12);
+    background-color: $color_white-1;
+
+    @media only screen and (min-width: 768px){
+      max-width: 600px;
+    }
+
+    &_content__img-wrapper {
+      height: 194px;
+      width: 262px;
+      &::before {
+        bottom: -62px;
+        left: -489px;
+        height: 173px;
+        width: 684px;
+      }
+    }
+
+    &-card {
+      display: flex;
+    }
+  }
+}
+
+.close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: $color_blue-light;
+  font-weight: 800;
+
+  &:hover {
+    cursor: pointer;
+    color: $color_red-light;
+  }
+}

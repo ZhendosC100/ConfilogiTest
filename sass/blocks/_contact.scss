@@ -78,8 +78,13 @@
 .input {
   &_wrapper {
     position: relative;
+    margin-bottom: 10px;
     width: 100%;
     max-width: 296px;
+
+    @media only screen and (min-width: 768px){
+      margin-bottom: 0;
+    }
   }
 
   &_img {
@@ -115,7 +120,6 @@
 .input_wrapper-active {
   border-radius: 10px;
   background-color: $color_red-light;
-  margin-bottom: 10px;
 
   .input {
     &_img {
@@ -130,5 +134,9 @@
   .contact_form__email {
     margin-top: 2px;
     width: 90%;
+
+    @media only screen and (min-width: 768px){
+      width: 91%;
+    }
   }
 }
