@@ -3,6 +3,7 @@ const popup = () => {
   const closeBtn = modalTab.querySelector('.close');
   const header = document.querySelector('.header');
   let modalShowIndex = true;
+  let viewPortPoint = document.documentElement.clientWidth;
 
   const showModal = () => {
     modalTab.style.display = 'flex';
@@ -15,12 +16,14 @@ const popup = () => {
   }
 
   const autoShowModal = () => {
-    header.addEventListener('mouseover', () => {
-      if (modalShowIndex) {
-        showModal();
-        modalShowIndex = false;
-      }
-    });
+    if (viewPortPoint > 576) {
+      header.addEventListener('mouseover', () => {
+        if (modalShowIndex) {
+          showModal();
+          modalShowIndex = false;
+        }
+      });
+    }
   };
 
   setTimeout(showModal, 30000);

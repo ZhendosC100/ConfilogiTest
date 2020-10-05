@@ -2,7 +2,7 @@ const textChange = () => {
 
   const textToChange = document.querySelector('.contact_dynamic');
   const startValue = +textToChange.textContent.replace(/[^0-9]/ig, '');
-  const step = 10;
+  const step = 35;
   
   function stepNumber(start, stop, step){
     setInterval(function(){
@@ -10,7 +10,7 @@ const textChange = () => {
             start -= step;
             textToChange.textContent = start; 
         }
-    }, 6);
+    }, 20);
 }
 
   stepNumber(startValue, 0, step);

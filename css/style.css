@@ -1241,6 +1241,10 @@ button {
   padding-bottom: 0;
 }
 
+.modal_tab__btn {
+  margin-bottom: 8px;
+}
+
 .close {
   position: absolute;
   right: 20px;
