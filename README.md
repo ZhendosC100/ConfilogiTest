@@ -18,7 +18,7 @@ Aby ukończyć to zadanie, powinnaś/powinieneś:
 
 Również chcielibyśmy, aby na stronie pojawiał się modal (pop-up), na którym będzie również zaimplementowane okno z zawartością jednej z zakładek (`tab-2-design.jpg` lub `tab-3-design.jpg`). Ma się ono otwierać:
 
-- Po najechaniu kursorem górnej części strony,  - done ✅ (działai tylko jednokrotnie❗ zrobiono dla szerokości powyżej 576px, szerokość sprawdza przy załadowaniu strony❗ )
+- Po najechaniu kursorem górnej części strony,  - done ✅ (działa tylko jednokrotnie❗ zrobiono dla szerokości powyżej 576px, szerokość sprawdza przy załadowaniu strony❗ )
 - po 30 sekundach wejścia na stronę,            - done ✅
 
 Dodatkowo, w stopce strony znajduje się również liczba '35,000+ already joined'. Chcielibyśmy, aby ta liczba spadała do 0 w ciągu 20 sekund od wejścia na stronę.                              - done ✅
